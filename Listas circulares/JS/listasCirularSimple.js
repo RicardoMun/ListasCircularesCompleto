@@ -20,6 +20,7 @@ class listasCircularesSimples {
         if (!this.head) {
             this.head = newNode;
             this.tail = this.head;
+            this.tail.next = this.head;
         }
         newNode.next = this.head;
         /* El nuevo nodo pasa a ser la cabeza de la lista */
@@ -63,7 +64,7 @@ class listasCircularesSimples {
         }
     }
 
-    //BUSCA un nodo por el PUNTERO(NodoBuscado) Santa
+    //BUSCA un nodo por el PUNTERO(NodoBuscado)
     getValorNodo(nodoBuscado) {
         if (nodoBuscado < 0 || nodoBuscado >= this.length) return null;
         let contadorNodos = 0;
@@ -76,7 +77,7 @@ class listasCircularesSimples {
         return nodoActual;
     }
 
-    //Juan Felipe
+    
     modificarNodo(nodoBuscado, value){
         
         let nodoActual = this.head;
