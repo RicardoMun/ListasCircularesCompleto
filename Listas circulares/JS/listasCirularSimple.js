@@ -21,10 +21,11 @@ class listasCircularesSimples {
             this.head = newNode;
             this.tail = this.head;
             this.tail.next = this.head;
+        }else{
+        this.tail.next = newNode;
+        this.tail = this.head
+        this.tail.next = this.head;
         }
-        newNode.next = this.head;
-        /* El nuevo nodo pasa a ser la cabeza de la lista */
-        this.head = newNode;
         this.length++;
         return this;
     }
