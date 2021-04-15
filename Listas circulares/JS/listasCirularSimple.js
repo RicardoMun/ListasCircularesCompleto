@@ -61,8 +61,8 @@ class listasCircularesSimples {
                 //Actualizamos el puntero del ultimo nodo
                 aux.next = siguiente.next;
             }
-            this.length--;
         }
+        this.length--;
     }
 
     //BUSCA un nodo por el PUNTERO(NodoBuscado)
